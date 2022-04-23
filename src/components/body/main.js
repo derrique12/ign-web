@@ -16,7 +16,7 @@ export default class Main extends Component {
     };
   }
   componentDidUpdate(prevProps, prevState){
-    if (prevState.currentVideo !== this.state.currentVideo) {
+    if (prevState.currentVideo != this.state.currentVideo) {
       this.getInformation(this.state.currentVideo)
     }
   }
